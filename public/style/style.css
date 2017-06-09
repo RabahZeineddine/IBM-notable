@@ -1,0 +1,118 @@
+html ,body{
+    margin: 0;
+    padding: 0;
+	height: 100%;
+	width: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+	
+}
+
+.header , .footer{
+	/*height: 10%;*/
+	width: 100%;
+}
+
+.main{
+	height: 80%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.custom-header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.custom-header div{
+	margin: 0 !important;
+}
+
+
+
+.material-icons.md-18 { font-size: 18px; }
+
+.chip {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	
+	
+}
+.close-btn{
+	cursor: pointer !important;
+	margin: 0 5px;
+}
+
+.chip:hover{
+	box-shadow: 2px 2px 5px #dbdbdb!important;
+}
+.chip:hover .exit{
+	visibility: visible;
+}
+
+#helper{
+	font-size: 10pt;
+	color: #000;
+	font-weight: 100;
+	margin-left: 8px;
+}
+
+.thumb_up {
+	margin: 0px 0px 0 5px;
+	cursor: pointer;
+}
+
+input[type=text]:focus{
+	border-bottom: 1px solid #651fff !important;
+
+}
+input[type=text]:focus + label{
+	color: #651fff !important;
+}
+
+
+.custom-skills{
+	display: flex;	
+	flex-wrap: wrap;
+	max-width: 350px;
+	min-width: 300px;
+}
+.fixed-skills{
+		max-width: 350px;
+	min-width: 300px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.badge-custom{
+	border-radius: 50% !important;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #9fa8da;
+	color: #fff;
+	margin: 0 0 0 5px;
+}
+
+.small{
+	margin: 0  0px 0 5px !important;
+	width: 18px !important;
+	height: 18px !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*margin: 0 0 0 5px;*/
+	color: #fff;
+}

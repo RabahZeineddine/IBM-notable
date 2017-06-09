@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>IBM -- NOTABLE</title>
+	<meta charset="utf-8" />
+	<link href="/style/style.css" type="text/css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<!--<link rel="stylesheet" href="/style/materialize.min.css">-->
+
+	<!-- Compiled and minified JavaScript -->
+	<!--<script src="/scripts/materialize.min.js"></script>-->
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+
+
+</head>
+
+<body>
+	<div class="header">
+		<nav>
+			<div class="nav-wrapper  black">
+				<a href="#" class="brand-logo brand" style="margin-left:20px;">IBM - Notable</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="#">Logout</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="main">
+		<div class="container">
+			<div id="showUsers"></div>
+			<br><br>
+			<table class="responsive-table ">
+				<thead>
+					<tr>
+						<th>Adicionar Membro</th>
+						<th>Skills</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<!--<div class="col s12 m6">-->
+							<div class="input-field  ">
+								<input id="name_input" type="text" class="validate">
+								<label for="name_input">Nome</label>
+							<!--</div>-->
+							</div>
+						</td>
+						<td>
+							<!--<div class="col s12 m6">-->
+							<div class="input-field ">
+								<input id="skills" type="text" class="validate" onkeypress="return newEvent(event);">
+								<label for="skills">Skills</label>
+							</div>
+							<!--</div>-->
+						</td>
+						<td>
+							<div class="custom-skills" id="addTags">
+							</div>
+						</td>
+
+						<td><button class="waves-effect waves-light blue btn" onclick="addUser()">Salvar</button></td>
+					</tr>
+				</tbody>
+			</table>
+
+
+		</div>
+	</div>
+
+	<footer class="page-footer black " style="width: 100% !important;">
+		<div class="footer-copyright">
+			<div class="container">
+				© 2017 Copyright IBM Brazil
+
+			</div>
+		</div>
+	</footer>
+	<script src="/scripts/util.js"></script>
+	<script src="/scripts/index.js"></script>
+</body>
+
+</html>
