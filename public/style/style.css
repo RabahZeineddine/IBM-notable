@@ -1,0 +1,156 @@
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  main {
+    flex: 1 0 auto;
+  }
+  .index_main{
+    background-image: url(/images/skills.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media screen and (min-width : 1000px){
+    .index_main{
+      background-size: contain;
+      
+    }
+  }
+  @media screen and (max-width : 400px){
+    .index_main{
+      background-size: 200% 100%;
+    }
+  }
+
+.brand-logo{
+    margin-left: 10px !important;
+}
+.full-height{
+    height: 100% !important;
+}
+.full-width{
+  width: 100%;
+}
+.centralized{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+.panel-header{
+     font-size: 15pt;
+     background-color: #4A83C6;
+     color: #fff; 
+     padding-left: 10px;
+     width: 100%;
+     padding: 5px;
+}
+.custom-panel{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* In modal */
+.add_skills{
+  display: flex ;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+input[type=text]:focus{
+	border-bottom: 1px solid #2196f3 !important;
+
+}
+input[type=text]:focus + label{
+	color: #2196f3 !important;
+}
+
+
+.material-icons.md-18 { font-size: 18px; }
+.name , .email{
+  width: 20% !important; 
+}
+.chips-holder{
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+}
+.chip{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  min-width: 170px; 
+  max-width: 170px;
+}
+
+.chip:hover{
+	box-shadow: 2px 2px 5px #dbdbdb!important;
+  background-color: #fff !important;
+  /*cursor: pointer !important;*/
+}
+
+.chip_tag{
+  min-width: 80px !important;
+  max-width: 80px !important;
+  
+}
+
+
+.thumb_up_icon{
+  margin: 0 5px;
+  cursor: pointer ;
+}
+.remove_icon {
+  cursor: pointer ;
+}
+.edit_icon{
+  cursor: pointer ;
+  visibility: hidden;
+  color: blue;
+}
+tr:hover  .edit_icon{
+  visibility: visible;
+}
+#remove_icon_a{
+  color: #000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons-holder{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-custom{
+	border-radius: 50% !important;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #9fa8da;
+	color: #fff;
+}
+#remove_btn , #remove_btn_edit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 128px !important;
+}
+
+.small{
+  width: 20px !important;
+  height: 20px !important;
+}

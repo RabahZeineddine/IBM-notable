@@ -1,0 +1,10 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: ibm-notable
+  host: ibm-notable
+  disk_quota: 256M
+  services:
+  - ibm-notable-cloudantNoSQLDB
